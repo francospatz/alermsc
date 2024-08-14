@@ -1,0 +1,14 @@
+{
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": {
+        "name": "eslint"
+      },
+      "parserOpts": {
+        "mergePattern": "^Merge pull request #(\\d+) from (.*)$"
+      },
+      "infile": "CHANGELOG.md",
+      "header": "# Changelog \n All notable changes to the 'alermsc-web-portfolio' project will be documented in this file. This project adheres to Semantic Versioning."
+    }
+  }
+}
