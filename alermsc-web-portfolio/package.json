@@ -9,16 +9,46 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lenis": "^1.1.9",
+    "lodash": "^4.17.21",
+    "next": "14.2.5",
+    "next-sitemap": "^4.2.3",
+    "path": "^0.12.7",
+    "postcss-nested": "^6.2.0",
+    "preact": "^10.23.2",
     "react": "^18",
+    "react-div-100vh": "^0.7.0",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "sass": "^1.77.8"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@next/eslint-plugin-next": "^14.2.5",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/tailwindcss": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "14.2.5",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^13.0.0",
+    "postcss-preset-env": "^10.0.1",
+    "precss": "^4.0.0",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.4.5"
   }
 }
