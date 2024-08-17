@@ -14,6 +14,55 @@
 
 /* Simple defaults */
 
+html,
 body {
-  @apply font-sans antialiased;
+  overscroll-behavior-x: none;
+}
+
+html {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #dadada;
+  z-index: 0;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.loader {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.item {
+  user-select: none;
+}
+
+.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.card-hover-wrapper {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform: rotateY(25deg) rotateZ(5deg) rotateX(10deg);
+}
+
+@media (min-width: 1024px) {
+  .card-hover-wrapper:hover {
+    transform: translateX(20px) translateY(-60px) rotateY(25deg) rotateZ(5deg) rotateX(10deg);
+  }
+}
+
+.card-container {
+  pointer-events: none;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }

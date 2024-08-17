@@ -1,3 +1,5 @@
+const { off } = require("process");
+
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -52,32 +54,6 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton'],
       },
     ],
-    '@typescript-eslint/naming-convention': [
-      'warn',
-      {
-        selector: 'variable',
-        format: ['strictCamelCase', 'UPPER_CASE'],
-        leadingUnderscore: 'allow',
-        trailingUnderscore: 'allow',
-      },
-      {
-        selector: 'parameter',
-        format: ['strictCamelCase'],
-      },
-      {
-        selector: 'function',
-        format: ['PascalCase', 'strictCamelCase'],
-      },
-      {
-        selector: 'typeLike',
-        format: ['PascalCase'],
-        prefix: ['I'],
-      },
-      {
-        selector: 'variable',
-        modifiers: ['destructured'],
-        format: null,
-      },
-    ],
+    '@typescript-eslint/naming-convention': 'off',
   },
 };
