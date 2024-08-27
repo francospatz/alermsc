@@ -1,0 +1,3 @@
+# Enforce line ends in LF instead of CRLF for better future implementations
+*.js text eol=lf
+*.ts text eol=lf
