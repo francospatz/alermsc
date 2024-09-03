@@ -1,4 +1,4 @@
-import express, { Express, Request, Response, urlencoded } from "express";
+import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 
 dotenv.config(); // This way .env variables are available anywhere in the project.
@@ -7,6 +7,7 @@ const app: Express = express();
 const port = process.env.PORT;
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 if (process.env.ENV === "dev") {
   (async () => {
@@ -14,6 +15,7 @@ if (process.env.ENV === "dev") {
     app.use(morgan("dev"));
   })();
 }
+
 app.get("/", (req: Request, res: Response) => {
   res.send("Welcome to Aleja's server API!");
 });
